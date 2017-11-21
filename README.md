@@ -1,7 +1,7 @@
 MP-Sim
 ======
 
-[MP-Sim][1] is a simulator framework usable on both [Matlab][2] and [Octave][3].
+[MP-Sim][1] is a simulator framework usable on both [MATLAB][2] and [Octave][3].
 It can be integrated with [MATPOWER][4] for power systems related simulations.
 Implementation was done by Haeyong Shin as an undergraduate student at
 Cornell University under the supervision of Ray D. Zimmerman.
@@ -9,7 +9,7 @@ Cornell University under the supervision of Ray D. Zimmerman.
 System Requirements
 -------------------
 
-*   [Matlab][2] version 7 (R14) or later, or
+*   [MATLAB][2] version 7 (R14) or later, or
 *   [GNU Octave][3] version 4.0 or later
 *   [MP-Test][5], for running the MP-Sim test suite
 
@@ -22,7 +22,7 @@ Installation
     equivalent corresponds for ``<MPTEST>``.
 
 2.  Add ``<MPSIM>/lib``, ``<MPSIM>/lib/t``, ``<MPTEST>/lib``, and
-    ``<MPTEST>/lib/t`` to your Matlab path.
+    ``<MPTEST>/lib/t`` to your MATLAB path.
 
 3.  Run MP-Sim's tests by typing ``test_mpsim`` in the MATLAB console. You 
 should see something like:
@@ -79,7 +79,7 @@ and the latest version is always available at:
 <https://github.com/MATPOWER/mpsim/blob/master/docs/MP-Sim-manual.pdf>.
 
 And second is the built-in `help` command. As with the built-in
-functions and toolbox routines in Matlab and Octave, you can type `help`
+functions and toolbox routines in MATLAB and Octave, you can type `help`
 followed by the name of a command or M-file to get help on that particular
 class or function. All of the M-files in MP-Sim have such documentation.
 

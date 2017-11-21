@@ -62,7 +62,7 @@ easily reproduce it. The simpler the case the better.
 4. **Submit an issue that includes a detailed report.** A good bug report
 will avoid the need for the developers to track you down for more information.
     - Use an accurate, descriptive title for your issue.
-    - Describe your environment - Matlab or Octave version, OS, etc.
+    - Describe your environment - MATLAB or Octave version, OS, etc.
     - Include a few lines of code or attach a script file that reproduces
       the bug.
     - Describe the result you got and what you expected.
@@ -212,7 +212,7 @@ the existing MP-Sim test files
 examples of how to write tests.
 
 You can run your tests by typing the name of your test function at the
-Matlab or Octave prompt, or `test_mpsim` to run the entire test suite.
+MATLAB or Octave prompt, or `test_mpsim` to run the entire test suite.
 
 ### Sharing your changes
 

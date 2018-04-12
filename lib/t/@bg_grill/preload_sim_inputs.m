@@ -10,7 +10,7 @@ function [thissim, byrun, byidx, byboth] = preload_sim_inputs(ps, sim_name, sim_
 %   where 'base' corresponds to run 1 and 'growth' to run 2
 
 %   MP-Sim
-%   Copyright (c) 2016, 2017 by Haeyong Shin, Ray Zimmerman
+%   Copyright (c) 2016, 2017 by Haeyong (David) Shin, Ray Zimmerman
 %
 %   This file is part of MP-Sim.
 %   Covered by the 3-clause BSD License (see LICENSE file for details).

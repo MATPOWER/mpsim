@@ -2,7 +2,7 @@ function t_mpsim_shared_x_queue(quiet)
 %T_MPSIM_SHARED_X_QUEUE  Tests for MPSIM_SHARED_X_QUEUE
 
 %   MP-Sim
-%   Copyright (c) 2016, 2017 by Haeyong Shin, Ray Zimmerman
+%   Copyright (c) 2016, 2017 by Haeyong (David) Shin, Ray Zimmerman
 %
 %   This file is part of MP-Sim.
 %   Covered by the 3-clause BSD License (see LICENSE file for details).

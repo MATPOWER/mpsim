@@ -19,7 +19,7 @@ function u = input(sim, sim_inputdir, r, t)
 %       U - struct of inputs for current run and time step
 
 %   MP-Sim
-%   Copyright (c) 2016, 2017 by Haeyong Shin, Ray Zimmerman
+%   Copyright (c) 2016, 2017 by Haeyong (David) Shin, Ray Zimmerman
 %
 %   This file is part of MP-Sim.
 %   Covered by the 3-clause BSD License (see LICENSE file for details).

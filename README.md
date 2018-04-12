@@ -3,7 +3,7 @@ MP-Sim
 
 [MP-Sim][1] is a simulator framework usable on both [MATLAB][2] and [Octave][3].
 It can be integrated with [MATPOWER][4] for power systems related simulations.
-Implementation was done by Haeyong Shin as an undergraduate student at
+Implementation was done by Haeyong (David) Shin as an undergraduate student at
 Cornell University under the supervision of Ray D. Zimmerman.
 
 System Requirements

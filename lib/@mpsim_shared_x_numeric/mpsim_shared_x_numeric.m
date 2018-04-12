@@ -21,7 +21,7 @@ classdef mpsim_shared_x_numeric < mpsim_shared_x
 %   same time period are consistent.
 
 %   MP-Sim
-%   Copyright (c) 2016, 2017 by Haeyong Shin, Ray Zimmerman
+%   Copyright (c) 2016, 2017 by Haeyong (David) Shin, Ray Zimmerman
 %
 %   This file is part of MP-Sim.
 %   Covered by the 3-clause BSD License (see LICENSE file for details).

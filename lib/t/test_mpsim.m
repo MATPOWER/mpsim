@@ -13,7 +13,7 @@ function success = test_mpsim(verbose, exit_on_fail)
 %   See also T_RUN_TESTS.
 
 %   MP-Sim
-%   Copyright (c) 2016 by Haeyong Shin, Ray Zimmerman
+%   Copyright (c) 2016 by Haeyong (David) Shin, Ray Zimmerman
 %
 %   This file is part of MP-Sim.
 %   Covered by the 3-clause BSD License (see LICENSE file for details).

@@ -148,7 +148,7 @@
 \newcommand{\mipsver}[0]{1.2.2}
 
 \newcommand{\mpsim}[0]{{MP-Sim}}
-\newcommand{\mpsimver}[0]{1.0b1}
+\newcommand{\mpsimver}[0]{1.0}
 \newcommand{\mpsimurl}[0]{https://github.com/MATPOWER/mpsim}
 \newcommand{\mpsimlink}[0]{\href{\mpsimurl}{\mpsim{}}}
 \newcommand{\mpsimpath}[1]{\textsf{\textsl{{\relsize{-1.0}\textless{}\mbox{MPSIM}\textgreater{}}}}\code{{#1}}}
@@ -246,7 +246,7 @@
 \title{\mpsim{} \mpsimver{}\\
 User's Manual}
 \author{Haeyong (David) Shin \and Ray~D.~Zimmerman}
-\date{May 19, 2017} % comment this line to display the current date
+\date{April 17, 2018} % comment this line to display the current date
 %\date{December 14, 2011\thanks{Second revision. First revision was December 13, 2011}} % comment this line to display the current date
 
 %%% BEGIN DOCUMENT
@@ -256,7 +256,7 @@ User's Manual}
 \vfill
 \begin{center}
 {\scriptsize
-\copyright~2017~individual contributors (see AUTHORS file for details)\\
+\copyright~2017, 2018~individual contributors (see AUTHORS file for details)\\
 All Rights Reserved}
 \end{center}
 
@@ -2006,6 +2006,18 @@ The \code{post\_run} method of \code{opf\_sim} generates a few plots that are sa
 \label{app:release_history}
 
 The full release history can be found in \code{CHANGES.md} or \href{https://github.com/MATPOWER/mpsim/blob/master/CHANGES.md}{online} at \url{https://github.com/MATPOWER/mpsim/blob/master/CHANGES.md}.
+
+
+\subsection{Version 1.0 -- released April 17, 2018}
+\label{app:v10b2}
+
+The \href{http://www.pserc.cornell.edu/matpower/docs/MP-Sim-manual-1.0.pdf}{\mpsim{} 1.0 User's Manual} is available online.\footnote{\url{http://www.pserc.cornell.edu/matpower/docs/MP-Sim-manual-1.0.pdf}}
+
+\begin{itemize}
+\item Add to \code{nested\_struct\_copy\_mpsim()} ability to copy fields that are struct arrays.
+\item Fix bug \#1 where \code{t\_opf\_sim} failed to create outputs dir.
+\item Fix bug \#3 that was causing \code{t\_opf\_sim} to fail on Octave, and preventing Travis-CI integration.
+\end{itemize}
 
 
 \subsection{Version 1.0b1 -- released May 19, 2017}

@@ -9,15 +9,15 @@ function rv = mpsimver(varargin)
 %   See also MPVER.
 
 %   MP-Sim
-%   Copyright (c) 2016, 2017 by Haeyong (David) Shin, Ray Zimmerman
+%   Copyright (c) 2016-2018 by Haeyong (David) Shin, Ray Zimmerman
 %
 %   This file is part of MP-Sim.
 %   Covered by the 3-clause BSD License (see LICENSE file for details).
 
 v = struct( 'Name',     'MP-Sim', ... 
-            'Version',  '1.0b1', ...
+            'Version',  '1.0', ...
             'Release',  '', ...
-            'Date',     '19-Mar-2017' );
+            'Date',     '17-Apr-2018' );
 if nargout > 0
     if nargin > 0
         rv = v;

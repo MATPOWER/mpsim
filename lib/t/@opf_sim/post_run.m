@@ -6,7 +6,7 @@ function post_run(sim, y, sim_outputdir)
 % information.
 
 %   MP-Sim
-%   Copyright (c) 2016, 2017 by Haeyong (David) Shin, Ray Zimmerman
+%   Copyright (c) 2016-2018 by Haeyong (David) Shin, Ray Zimmerman
 %
 %   This file is part of MP-Sim.
 %   Covered by the 3-clause BSD License (see LICENSE file for details).

@@ -38,6 +38,9 @@ Pg = Pg / sim.R;
 lam = lam / sim.R;
 mu = mu / sim.R;
 
+if exist(sim_outputdir, 'dir') ~= 7
+    [success, msg, msgid] = mkdir(sim_outputdir);
+end
 fig1 = figure('Visible', 'off');
 plot(Pg')
 xlabel('hour');

@@ -38,36 +38,38 @@ Pg = Pg / sim.R;
 lam = lam / sim.R;
 mu = mu / sim.R;
 
-if exist(sim_outputdir, 'dir') ~= 7
-    [success, msg, msgid] = mkdir(sim_outputdir);
+if exist('OCTAVE_VERSION', 'builtin') ~= 5  %% not running under Octave
+    if exist(sim_outputdir, 'dir') ~= 7
+        [success, msg, msgid] = mkdir(sim_outputdir);
+    end
+    fig1 = figure('Visible', 'off');
+    plot(Pg')
+    xlabel('hour');
+    ylabel('Generation (MW)');
+    title('Average Generation vs. Hour');
+    labelmaker = @(x)sprintf('Gen %d', x);
+    labels = cellfun(labelmaker, num2cell((1:ng)'), 'UniformOutput', 0);
+    legend(labels{:});
+    output_file1 = fullfile(sim_outputdir, 'generation');
+    print(fig1, output_file1, '-dpdf');
+
+    fig2 = figure('Visible', 'off');
+    plot(lam');
+    xlabel('hour');
+    ylabel('Nodal Price in $/MW');
+    title('Nodal Price vs. Hour');
+    legend('Max', 'Avg', 'Min');
+    output_file2 = fullfile(sim_outputdir, 'nodal_price');
+    print(fig2, output_file2, '-dpdf');
+
+    fig3 = figure('Visible', 'off');
+    plot(mu');
+    xlabel('hour');
+    ylabel('Average Shadow Price in $/MVA');
+    title('Line Congestion Shadow Price  vs. Hour');
+    labelmaker = @(x)sprintf('Line %d', x);
+    labels = cellfun(labelmaker, num2cell(il'), 'UniformOutput', 0);
+    legend(labels{:});
+    output_file3 = fullfile(sim_outputdir, 'congestion');
+    print(fig3, output_file3, '-dpdf');
 end
-fig1 = figure('Visible', 'off');
-plot(Pg')
-xlabel('hour');
-ylabel('Generation (MW)');
-title('Average Generation vs. Hour');
-labelmaker = @(x)sprintf('Gen %d', x);
-labels = cellfun(labelmaker, num2cell((1:ng)'), 'UniformOutput', 0);
-legend(labels{:});
-output_file1 = fullfile(sim_outputdir, 'generation');
-print(fig1, output_file1, '-dpdf');
-
-fig2 = figure('Visible', 'off');
-plot(lam');
-xlabel('hour');
-ylabel('Nodal Price in $/MW');
-title('Nodal Price vs. Hour');
-legend('Max', 'Avg', 'Min');
-output_file2 = fullfile(sim_outputdir, 'nodal_price');
-print(fig2, output_file2, '-dpdf');
-
-fig3 = figure('Visible', 'off');
-plot(mu');
-xlabel('hour');
-ylabel('Average Shadow Price in $/MVA');
-title('Line Congestion Shadow Price  vs. Hour');
-labelmaker = @(x)sprintf('Line %d', x);
-labels = cellfun(labelmaker, num2cell(il'), 'UniformOutput', 0);
-legend(labels{:});
-output_file3 = fullfile(sim_outputdir, 'congestion');
-print(fig3, output_file3, '-dpdf');

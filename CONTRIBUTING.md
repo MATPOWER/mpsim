@@ -197,7 +197,7 @@ look something like:
   - Use a hanging indent
 
   Fixes: https://github.com/MATPOWER/mpsim/issues/4
-  Refs: http://www.mail-archive.com/matpower-l@cornell.edu/msg05557.html
+  Refs: https://www.mail-archive.com/matpower-l@cornell.edu/msg05557.html
   Refs: https://github.com/MATPOWER/mpsim/pull/5
   ```
 
@@ -304,7 +304,7 @@ the simulation community. **Thank you!**
 [4]: http://www.pserc.cornell.edu/matpower/mailinglists.html#discusslist
 [5]: http://www.pserc.cornell.edu/matpower/mailinglists.html#devlist
 [6]: https://github.com/MATPOWER/mpsim/issues
-[7]: http://www.mail-archive.com/matpower-l@cornell.edu/
+[7]: https://www.mail-archive.com/matpower-l@cornell.edu/
 [8]: https://github.com/MATPOWER/matpower/blob/master/docs/MATPOWER-dev-guide.md
 [9]: https://help.github.com/articles/set-up-git/
 [10]: https://help.github.com/articles/fork-a-repo/

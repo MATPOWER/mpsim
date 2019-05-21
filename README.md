@@ -96,7 +96,7 @@ MP-Sim is distributed under the [3-clause BSD license][8].
 
 ----
 [1]: https://github.com/MATPOWER/mpsim
-[2]: http://www.mathworks.com/
+[2]: https://www.mathworks.com/
 [3]: https://www.gnu.org/software/octave/
 [4]: https://github.com/MATPOWER/matpower
 [5]: https://github.com/MATPOWER/mptest

@@ -1977,7 +1977,7 @@ The process classes all explicitly inherit the constructor of their parent and o
 \clearpage
 \section{\mpsim{} for \matpower{} Simulations}
 
-\mpsim{} can be integrated with \matpower{}~\cite{matpower,zimmerman2011} and the \mostname{}~\cite{murillo-sanchez2013a} to perform various types of power flow, unit commitment and dispatch simulations.  An example simulation of an hourly dispatch problem using an optimal power flow (OPF) is provided in the distribution. In this example, \mpsim{} is used to solve an hourly dispatch using an AC OPF on a 30-bus power system model with load profiles that differ between the two runs.
+\mpsim{} can be integrated with \matpower{}~\cite{zimmerman2011,matpower,matpower_manual} and the \mostname{}~\cite{murillo-sanchez2013a} to perform various types of power flow, unit commitment and dispatch simulations.  An example simulation of an hourly dispatch problem using an optimal power flow (OPF) is provided in the distribution. In this example, \mpsim{} is used to solve an hourly dispatch using an AC OPF on a 30-bus power system model with load profiles that differ between the two runs.
 
 The simulation is implemented using the \code{opf\_sim} class for the simulator and a single process \code{opf\_hourly\_dispatch}, whose \code{update()} method solves the OPF problem. To run the OPF simulation, first install \matpower{} then type in the console:
 
@@ -2064,13 +2064,19 @@ H.~Shin, R.~D. Zimmerman. \mpsimman{}. 2018.
 [Online]. Available: \url{https://matpower.org/docs/MP-Sim-manual.pdf}
 \doi{10.5281/zenodo.3238683}
 
-\bibitem{matpower}
-R.~D. Zimmerman and C.~Murillo-S{\'a}nchez. \matpower{} User's Manual,
-  [Online]. Available: \url{\matpowerurl}
-
 \bibitem{zimmerman2011}
 R.~D. Zimmerman, C.~E. Murillo-S{\'a}nchez, and R.~J. Thomas, ``\matpower{}: Steady-State Operations, Planning and Analysis Tools for Power Systems Research and Education,'' \emph{Power Systems, IEEE Transactions on}, vol.~26, no.~1, pp.~12--19, Feb.~2011.
 \doi{10.1109/TPWRS.2010.2051168}
+
+\bibitem{matpower}
+R.~D. Zimmerman, C.~E. Murillo-S{\'a}nchez (2019). \matpower{}\\~
+[Software]. Available: \url{http://www.pserc.cornell.edu/matpower/}\\
+\doi{10.5281/zenodo.3236535}
+
+\bibitem{matpower_manual}
+R.~D. Zimmerman, C.~E. Murillo-S{\'a}nchez. \matpower{} User's Manual. 2019.\\~
+[Online]. Available: \url{https://matpower.org/docs/MATPOWER-manual.pdf}\\
+\doi{10.5281/zenodo.3236519}
 
 \bibitem{murillo-sanchez2013a}
 C.~E. Murillo-S{\'a}nchez, R.~D. Zimmerman, C.~L. Anderson, and R.~J. Thomas, ``Secure Planning and Operations of Systems with Stochastic Sources, Energy Storage and Active Demand,'' \emph{Smart Grid, IEEE Transactions on}, vol.~4, no.~4, pp.~2220--2229, Dec.~2013.

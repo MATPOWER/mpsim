@@ -6,12 +6,14 @@ It can be integrated with [MATPOWER][4] for power systems related simulations.
 Implementation was done by Haeyong (David) Shin as an undergraduate student at
 Cornell University under the supervision of Ray D. Zimmerman.
 
+
 System Requirements
 -------------------
 
 *   [MATLAB][2] version 7 (R14) or later, or
 *   [GNU Octave][3] version 4.0 or later
 *   [MP-Test][5], for running the MP-Sim test suite
+
 
 Installation
 ------------
@@ -38,6 +40,7 @@ All tests successful (186 passed, 8 skipped of 194)
 Elapsed time 0.94 seconds.
 ```
 Additional test cases will be run if [MATPOWER][4] is installed.
+
 
 Usage
 -----
@@ -67,6 +70,7 @@ End of run
     will run the same burger shop but print more information to the console
     during the simulation.
 
+
 Documentation
 -------------
 
@@ -83,11 +87,37 @@ functions and toolbox routines in MATLAB and Octave, you can type `help`
 followed by the name of a command or M-file to get help on that particular
 class or function. All of the M-files in MP-Sim have such documentation.
 
+
+[Citing MP-Sim][9]
+------------------
+
+We request that publications derived from the use of MP-Sim explicitly
+acknowledge that fact by citing the [MP-Sim User's Manual][6]. The
+citation and DOI can be version-specific or general, as appropriate. For
+version 1.0, use:
+
+>   H. Shin, R. D. Zimmerman. *MP-Sim User's Manual, Version 1.0*. 2018.
+    [Online]. Available: https://matpower.org/docs/MP-Sim-manual-1.0.pdf  
+    doi: [10.5281/zenodo.3238684](https://doi.org/10.5281/zenodo.3238684)
+
+For a version non-specific citation, use the following citation and DOI,
+with *\<YEAR\>* replaced by the year of the most recent release:
+
+>   H. Shin, R. D. Zimmerman. *MP-Sim User's Manual*. *\<YEAR\>*. [Online].
+    Available: https://matpower.org/docs/MP-Sim-manual.pdf  
+    doi: [10.5281/zenodo.3238683][10]
+
+A list of versions of the User's Manual with release dates and
+version-specific DOI's can be found via the general DOI at
+https://doi.org/10.5281/zenodo.3238683.
+
+
 Contributing
 ------------
 
 Please see our [contributing guidelines][7] for details on how to
 contribute to the project or report issues.
+
 
 License
 -------
@@ -100,6 +130,8 @@ MP-Sim is distributed under the [3-clause BSD license][8].
 [3]: https://www.gnu.org/software/octave/
 [4]: https://github.com/MATPOWER/matpower
 [5]: https://github.com/MATPOWER/mptest
-[6]: https://github.com/MATPOWER/mpsim/blob/master/docs/MP-Sim-manual.pdf
+[6]: docs/MP-Sim-manual.pdf
 [7]: CONTRIBUTING.md
-[8]: ./LICENSE
+[8]: LICENSE
+[9]: CITATION
+[10]: https://doi.org/10.5281/zenodo.3238683

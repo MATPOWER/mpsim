@@ -301,8 +301,8 @@ the simulation community. **Thank you!**
 [1]: https://github.com/MATPOWER/mpsim
 [2]: https://github.com/MATPOWER/matpower
 [3]: https://github.com/MATPOWER/mptest
-[4]: http://www.pserc.cornell.edu/matpower/mailinglists.html#discusslist
-[5]: http://www.pserc.cornell.edu/matpower/mailinglists.html#devlist
+[4]: https://matpower.org/mailing-lists/#discusslist
+[5]: https://matpower.org/mailing-lists/#devlist
 [6]: https://github.com/MATPOWER/mpsim/issues
 [7]: https://www.mail-archive.com/matpower-l@cornell.edu/
 [8]: https://github.com/MATPOWER/matpower/blob/master/docs/MATPOWER-dev-guide.md

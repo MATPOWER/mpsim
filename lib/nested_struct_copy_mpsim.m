@@ -47,7 +47,7 @@ function d = nested_struct_copy_mpsim(d, s, opt, parent)
 %
 %   NOTE: This file is a direct copy, with a name change, of
 %         nested_struct_copy.m from MATPOWER 6.0.
-%         See http://www.pserc.cornell.edu/matpower/ for more info.
+%         See https://matpower.org for more info.
 
 %   MP-Sim
 %   Copyright (c) 2013-2018, Power Systems Engineering Research Center (PSERC)

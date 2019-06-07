@@ -29,7 +29,7 @@ function varargout = feval_w_path_mpsim(fpath, fname, varargin)
 %
 %   NOTE: This file is a direct copy, with a name change, of
 %         feval_w_path.m from MATPOWER.
-%         See http://www.pserc.cornell.edu/matpower/ for more info.
+%         See https://matpower.org for more info.
 
 %   MP-Sim
 %   Copyright (c) 2016-2017, Power Systems Engineering Research Center (PSERC)

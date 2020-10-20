@@ -24,7 +24,7 @@ Installation
     equivalent corresponds for ``<MPTEST>``.
 
 2.  Add ``<MPSIM>/lib``, ``<MPSIM>/lib/t``, ``<MPTEST>/lib``, and
-    ``<MPTEST>/lib/t`` to your MATLAB path.
+    ``<MPTEST>/lib/t`` to your MATLAB/Octave path.
 
 3.  Run MP-Sim's tests by typing ``test_mpsim`` in the MATLAB console. You 
 should see something like:

@@ -671,7 +671,7 @@ Note that it is only the shared state \emph{value} that is contained in the shar
 \subsection{Structure of Simulator Input $u$}
 \label{sec:u}
 
-The input $u$, also illustrated in Section~\ref{sec:partitioning}, is an arbitrary user-defined value. More specifically, $u^t$ is an arbitrary user-defined set of information made available to the simulator at time step~$t$. It is assembled at each time step from multiple sources, including collections of data loaded at the beginning of the simulation batch, at the beginning of the current simulation run, and at the current time step. Each of these 3 collections of data can consist of a global portion associated with the overall simulation as well as portions associated with specific processes triggered at time~$t$..
+The input $u$, also illustrated in Section~\ref{sec:partitioning}, is an arbitrary user-defined value. More specifically, $u^t$ is an arbitrary user-defined set of information made available to the simulator at time step~$t$. It is assembled at each time step from multiple sources, including collections of data loaded at the beginning of the simulation batch, at the beginning of the current simulation run, and at the current time step. Each of these 3 collections of data can consist of a global portion associated with the overall simulation as well as portions associated with specific processes triggered at time~$t$.
 
 The user does not define the input $u^t$ directly, but indirectly, by implementing simulator and simulator process methods\footnote{Namely \code{preload\_sim\_inputs},  \code{preload\_run\_inputs} and  \code{load\_current\_inputs}. See Sections~\ref{sec:mpsim_override_methods} and \ref{sec:ps_override_methods} for details.} to handle the various preloading and loading options. \mpsim{} then assembles $u^t$ automatically from the collections of data provided by these methods. Table~\ref{tab:input_return_args} describes the various variables that are defined and returned by these methods.
 
@@ -1208,10 +1208,10 @@ operation & description \\
 \midrule
 \codeq{+}	& add update value to current value \\
 \codeq{-}	& subtract update value from current value \\
-\codeq{*}	& multipy current value by update value \emph{(matrix multiply)} \\
+\codeq{*}	& multiply current value by update value \emph{(matrix multiply)} \\
 \codeq{/}	& divide current value by update value \emph{(matrix divide)} \\
 \codeq{\^{}}	& raise current value to power of update value \emph{(matrix exponent)} \\
-\codeq{.*}	& multipy current value by update value \emph{(elementwise)} \\
+\codeq{.*}	& multiply current value by update value \emph{(elementwise)} \\
 \codeq{./}	& divide current value by update value \emph{(elementwise)} \\
 \codeq{.\^{}}	& raise current value to power of update value \emph{(elementwise)} \\
 \codeq{=}	& replace current value with update value \\
@@ -1561,7 +1561,7 @@ This is external information that is made available to the simulation at a speci
 
 \subsubsection{What results does the simulation produce?}
 
-The behavior of the simulation is only available to the user through the output that it produces. This can be in the form of infomration printed to the screen during or after the execution of the simulation, or data or visualization files saved in the \simoutputdir{} directory.
+The behavior of the simulation is only available to the user through the output that it produces. This can be in the form of information printed to the screen during or after the execution of the simulation, or data or visualization files saved in the \simoutputdir{} directory.
 
 \subsubsection{How many runs are needed and how do they relate to one another?}
 
@@ -1804,10 +1804,10 @@ data & pre-loaded for & into field & by \code{@class/method} & order by \\
 weekly order & \emph{just-in-time} & \codeq{orders} & \code{@bg\_order/load\_current\_inputs}& -- \\
 \bottomrule
 \end{tabular}
-\begin{tablenotes}
- \scriptsize
- \item [\dag] {Footnote.}
-\end{tablenotes}
+% \begin{tablenotes}
+%  \scriptsize
+%  \item [\dag] {Footnote.}
+% \end{tablenotes}
 \end{threeparttable}
 \end{table}
 
@@ -1965,7 +1965,7 @@ Likewise, the input data files for the \codeq{burger\_shop\_example} can be foun
 \item \code{shared\_states/thawed\_inventory.txt}
 \end{itemize}
 
-The \code{burger\_shop\_2d} simulator inherits everything from \code{burger\_shop\_2d}, and the \code{bg2\_<ps\_name>} classes inherit from the corresponding \code{bg\_<ps\_name>} classes, with only a few minor modifications/overrides.
+The \code{burger\_shop\_2d} simulator inherits everything from \code{burger\_shop}, and the \code{bg2\_<ps\_name>} classes inherit from the corresponding \code{bg\_<ps\_name>} classes, with only a few minor modifications/overrides.
 
 First, in the \code{initialization} method, the simulator sets \code{sim.R} to a vector of dimensions for the runs, namely a $2 \times 2$ array of runs, where the first dimension corresponds to ``base'' and ''growth'' and the second to the two different realizations of each.
 \begin{Code}
